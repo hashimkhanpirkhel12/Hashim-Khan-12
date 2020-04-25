@@ -56,9 +56,9 @@ logo = """ -----------------------------•◈•
 |__~~~\ •◈•-----█-------⑧-------█------•◈•
 |__~~~\ •◈•-----█-------⑥-------█------•◈•
 \033[1;91m=======================================
-\033[1;96mAuthor  \033[1;93m: \033[1;92m hashim khan pirkhel
+\033[1;96mAuthor  \033[1;93m: \033[1;92mhashim khan pirkhel
 \033[1;96mInstagram \033[1;93m: \033[1;hasham_khan_pirkhel
-\033[1;96mFacebook  \033[1;93m: \033[1; hashimkhan.pirkhel012
+\033[1;96mFacebook  \033[1;93m: \033[1;hashimkhan.pirkhel012
 \033[1;96mGithub \033[1;93m: \033[1;92mhttps://github.com/HashimKhan/Pirkhel
 \033[1;91m======================================="""
 
@@ -80,9 +80,9 @@ vuln = "\033[32mVuln"
 os.system("clear")
 print "\033[1;96m ============================================================="
 print  """\033[1;91m=======================================
-\033[1;96mAuthor  \033[1;93m: \033[1;92m hashim khan pirkhel
-\033[1;96mInstagram \033[1;93m: \033[1;92m hasham_khan_pirkhel
-\033[1;96mFacebook  \033[1;93m: \033[1;92m hashimkhan.pirkhel012
+\033[1;96mAuthor  \033[1;93m: \033[1;92mhashim khan pirkhel
+\033[1;96mInstagram \033[1;93m: \033[1;92mhasham_khan_pirkhel
+\033[1;96mFacebook  \033[1;93m: \033[1;92mhashimkhan.pirkhel012
 \033[1;96mGithub \033[1;93m: \033[1;92mhttps://github.com/HashimKhan/Pirkhel
 \033[1;91m======================================="""
 print " \x1b[1;93m============================================================="
