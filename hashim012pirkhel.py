@@ -55,8 +55,8 @@ logo = """
 \033[1;93m    ██║░░██║██║░░██║██████╔╝██║░░██║██║██║░╚═╝░██║  
 \033[1;93m    ╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░╚═╝  
 \033[1;93m🔥*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*🔥
-\033[0;94m  ⚡ ✯ 𝕮𝖗𝖊𝖆𝖙𝖔𝖗 ✪ 🅗🅐🅢🅗🅘🅜 🅚🅗🅐🅝 🅟🅘🅡🅚🅗🅔🅛   ✬⚡
-\033[0;94m  ⚡ ✯ 𝖄𝖔𝖚𝖙𝖚𝖇𝖊 ✪ 🅝🅞 🅨🅞🅤🅣🅤🅑🅔 ✬⚡
+\033[0;94m  ⚡ ✯ 𝕮𝖗𝖊𝖆𝖙𝖔𝖗 ✪ ᴍʀ ʜᴀsʜɪᴍ ᴋʜᴀɴ ᴘɪʀᴋʜᴇʟ  ✬⚡
+\033[0;94m  ⚡ ✯ 𝖄𝖔𝖚𝖙𝖚𝖇𝖊 ✪ ɴᴏ ʏᴏᴜᴛᴜʙᴇ ✬⚡
 \033[0;97m  ⚡ ✯ ɪ ᴀᴍ ɴᴏᴛ ʀᴇsᴘᴏɴsɪʙʟᴇ ғᴏʀ ᴀɴʏ ᴍɪss ᴜsᴇ ✬⚡
 \033[1;93m🔥*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*🔥 """
                                                 
@@ -103,7 +103,7 @@ while (loop == 'true'):
     if (username == CorrectUsername):
     	password = raw_input("\033[1;97m🗝 \x1b[1;95mENTER PASSWORD\x1b[1;97m»» \x1b[1;97m")
         if (password == CorrectPassword):
-            print "Logged in successfully as " + username #Dev:RANA
+            print "Logged in successfully as " + username #Dev:Sunny
 	    time.sleep(2)
             loop = 'false'
         else:
@@ -142,9 +142,9 @@ def login():
 				sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
 				data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
 				x=hashlib.new("md5")
-				x.update(sig)
+				x.update hashim(sig)
 				a=x.hexdigest()
-				data.update({'sig':a})
+				data.update hashim({'sig':a})
 				url = "https://api.facebook.com/restserver.php"
 				r=requests.get(url,params=data)
 				z=json.loads(r.text)
