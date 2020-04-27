@@ -1,2 +1,0 @@
-# Zero
-test zero
